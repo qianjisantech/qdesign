@@ -1,0 +1,22 @@
+# 开发文件和示例
+src/
+public/
+index.html
+vite.config.js
+example.html
+scripts/
+
+# 开发依赖
+node_modules/
+.git/
+.github/
+
+# 构建产物（保留dist/）
+# dist/ 会在package.json的files字段中包含
+
+# 其他
+.DS_Store
+*.log
+.env*
+.npmrc
+.npmignore

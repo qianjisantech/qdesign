@@ -1,0 +1,64 @@
+{
+  "name": "qdesign",
+  "version": "1.0.0",
+  "description": "A Vue 3 component library",
+  "main": "dist/qdesign.umd.js",
+  "module": "dist/qdesign.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src/index.js",
+    "src/index.d.ts",
+    "src/components",
+    "src/style.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/qdesign.es.js",
+      "require": "./dist/qdesign.umd.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "keywords": [
+    "vue",
+    "component-library",
+    "ui",
+    "qdesign"
+  ],
+  "author": "qianjisan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qianjisantech/qdesign.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qianjisantech/qdesign/issues"
+  },
+  "homepage": "https://github.com/qianjisantech/qdesign#readme",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:lib": "npx vite build --mode lib",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build:lib",
+    "release": "node scripts/publish.js"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "dependencies": {
+    "@wangeditor/editor": "^5.1.23",
+    "@wangeditor/editor-for-vue": "^5.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "typescript": "^5.0.0",
+    "vite": "^5.4.21",
+    "vue": "^3.5.24",
+    "vue-router": "^4.6.4",
+    "vue-tsc": "^2.0.0"
+  }
+}
